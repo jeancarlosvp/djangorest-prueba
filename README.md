@@ -38,11 +38,18 @@ Para la siguiente prueba se utilizó Python 3.9.6
 
 - `(venv)$ pip install -r requirements.txt`
 
-4. Ejecutar las migraciones en caso de apuntar  a otra bd.
+4. Ejecutar las migraciones en caso de apuntar  a otra bd. (aplicaría cambio al settings)
 
 - `(venv)$ python manage.py makemigrations`
 - `(venv)$ python manage.py migrate`
 
+5. O en su defecto restauramos la copia de respaldo del archivo
+
+- `dump-test_user-202311222116`
+
 5. Levantar backend
 
 - `(venv)$ python manage.py runserver`
+
+## Pruebas
+
