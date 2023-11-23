@@ -53,3 +53,25 @@ Para la siguiente prueba se utilizó Python 3.9.6
 
 ## Pruebas
 
+Para el uso de la api, podemos usar las credenciales de un usuario de prueba
+- email : `jean@mail.com`
+- password: `aika`
+
+1. Obtenemos el token
+   POST {{BASE_URL}}/api/token/
+   {
+        "email": "jean@mail.com",
+        "password": "aika"
+   }
+   
+3. Carguemos el token a los headers
+   
+5. Lista de usuarios
+   GET {{BASE_URL}}/api/usuarios/
+
+6. Creación de usuario
+   POST {{BASE_URL}}/api/users/
+   
+8. Eliminación de un usuario
+   DELETE {{BASE_URL}}/api/usuarios/{id}/
+
