@@ -127,10 +127,10 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test_user',
-        'USER': 'postgres',
+        'NAME': 'drf-database',
+        'USER': 'jeanpostgres',
         'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'HOST': 'drf-database.cpus2pbgzbaa.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
