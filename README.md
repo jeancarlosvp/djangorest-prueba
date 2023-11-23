@@ -47,7 +47,7 @@ Para la siguiente prueba se utilizó Python 3.9.6
 
 - `dump-test_user-202311222116`
 
-5. Levantar backend
+6. Levantar backend
 
 - `(venv)$ python manage.py runserver`
 
@@ -58,24 +58,50 @@ Para el uso de la api, podemos usar las credenciales de un usuario de prueba
 - password: `aika`
 
 1. Obtenemos el token
-   POST {{BASE_URL}}/api/token/
+   `POST` {{BASE_URL}}/api/token/
 
- - `{
-        "email": "jean@mail.com",
-        "password": "aika"
-   }`
+   <div style="text-align: center;">
+      <br><br/>
+        <img src="images/create_token.png">
+      <br><br/>
+   </div>
    
-3. Carguemos el token a los headers
+2. Carguemos el token a los headers  
+
+3. Lista de usuarios
+   `GET` {{BASE_URL}}/api/usuarios/
+
+   <div style="text-align: center;">
+      <br><br/>
+        <img src="images/get_users_list.png">
+      <br><br/>
+   </div>
+
+
+4. Creación de usuario
+   `POST` {{BASE_URL}}/api/users/
+
+    - Si no le enviamos el campo nombre
+
+   <div style="text-align: center;">
+      <br><br/>
+        <img src="images/create_user_without_nombre.png">
+      <br><br/>
+   </div>
+
+    - Usuario creado satisfactoriamente.
+
+   <div style="text-align: center;">
+      <br><br/>
+        <img src="images/create_user_7.png">
+      <br><br/>
+   </div>
    
-5. Lista de usuarios
-   GET {{BASE_URL}}/api/usuarios/
+5. Eliminación de un usuario
+   `DELETE` {{BASE_URL}}/api/usuarios/{id}/
 
-6. Creación de usuario
-   POST {{BASE_URL}}/api/users/
-   
-8. Eliminación de un usuario
-   DELETE {{BASE_URL}}/api/usuarios/{id}/
-
-![imagen]('https://github.com/jeancarlosvp/djangorest-prueba/blob/main/images/test.png')
-
-![iamgen]('images/test.png')
+   <div style="text-align: center;">
+      <br><br/>
+        <img src="images/delete_user_7.png">
+      <br><br/>
+   </div>
