@@ -59,10 +59,11 @@ Para el uso de la api, podemos usar las credenciales de un usuario de prueba
 
 1. Obtenemos el token
    POST {{BASE_URL}}/api/token/
-   {
+
+ - `{
         "email": "jean@mail.com",
         "password": "aika"
-   }
+   }`
    
 3. Carguemos el token a los headers
    
@@ -75,3 +76,6 @@ Para el uso de la api, podemos usar las credenciales de un usuario de prueba
 8. Eliminación de un usuario
    DELETE {{BASE_URL}}/api/usuarios/{id}/
 
+![imagen]('https://github.com/jeancarlosvp/djangorest-prueba/blob/main/images/test.png')
+
+![iamgen]('images/test.png')
